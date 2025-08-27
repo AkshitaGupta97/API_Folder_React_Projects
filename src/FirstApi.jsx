@@ -1,25 +1,38 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function FirstApi() {
     // 'http://localhost:3000/user'
+
+    const [userData, setUserdata] = useState([]);
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
-        userData();
-    },[])
-    const userData = async() => {
-        const url = 'http://localhost:3000/user';
-        let response = await fetch(url);
-        let data = await response.json();
+        setLoading(true);
+        getuserData();
+    }, []);
 
-        console.log(data);
-        
-    }
+    const getuserData = async () => {
+        const API = 'http://localhost:5001/user';
+        let response = await fetch(API);
+        response = await response.json();
+        setUserdata(response)
+        setLoading(false);
+    };
+
     return (
-        
         <div>
-        <h2>API functions</h2>
-
+            <h3>API functions and Routers</h3>
+            {
+                !loading ?
+                    userData.map((user) => (
+                        <div key={user.name} style={{ border: "2px solid blue", padding: "12px", borderRadius: "8px" }}>
+                            <h3>{user.name}</h3>
+                        </div>
+                    ))
+                    : <h2>Loading ....</h2>
+            }
         </div>
-    )
+    );
+
 }
 
 export default FirstApi
