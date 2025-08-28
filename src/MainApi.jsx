@@ -2,6 +2,7 @@ import { NavLink, Route, Routes } from "react-router";
 import FirstApi from "./FirstApi";
 import UserAdd from "./UserAdd";
 import "./App.css"
+import UserEdit from "./UserEdit";
 
 function MainApi(){
     return (
@@ -20,7 +21,8 @@ function MainApi(){
 
             <Routes>
                 <Route path="/" element={ <FirstApi />}/>
-                <Route path="add" element={ <UserAdd />}/>
+                <Route path="/add" element={ <UserAdd />}/>
+                <Route path="/edit/:id" element={<UserEdit/>} />
             </Routes>
         </div>
     )
