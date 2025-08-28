@@ -43,7 +43,7 @@ function FirstApi() {
             {
                 !loading ?
                     userData.map((user) => (
-                        <div key={user.name} style={{ border: "2px solid blue", padding: "12px", borderRadius: "8px" }}>
+                        <div key={user.id} style={{ border: "2px solid blue", padding: "12px", borderRadius: "8px" }}>
                             <h3>{user.name}</h3>
                             <ul>
                                 <li style={{color:"pink", fontWeight:"600"}}>{user.age}</li>

@@ -13,9 +13,6 @@
       "id": "acc9"
     },
     {
-      "name": "Lakshya",
-      "age": 17,
-      "email": "lak@gmail.com",
       "id": "acc7"
     },
     {
@@ -31,8 +28,8 @@
       "id": "0fc1"
     },
     {
-      "name": "Sweta",
-      "age": 40,
+      "name": "Sweta kumari",
+      "age": "30",
       "email": "swet@gmail.com",
       "id": "0fc6"
     },

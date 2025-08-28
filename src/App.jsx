@@ -1,13 +1,17 @@
 
 import './App.css'
-import MainApi from './MainApi'
+import InputChanges from './checkNameError/InputChanges'
+import InputChangesUseAction from './checkNameError/InputChangeUseactionstate'
+//import MainApi from './MainApi'
 
 function App() {
 
   return (
     <div>
 
-       <MainApi />
+       {/* <MainApi /> */}
+      <InputChanges />
+      <InputChangesUseAction />
     </div>
   )
 }

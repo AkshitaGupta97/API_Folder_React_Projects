@@ -3,9 +3,9 @@ import './App.css'
 
 
 export default function UserAdd() {
-    const [name, setName] = useState()
-    const [age, setAge] = useState()
-    const [email, setEmail] = useState()
+    const [name, setName] = useState('')
+    const [age, setAge] = useState('')
+    const [email, setEmail] = useState('')
 
     const buttonAddClick = async() => {
         //console.log(name, age, email);

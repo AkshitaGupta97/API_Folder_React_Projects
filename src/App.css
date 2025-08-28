@@ -21,3 +21,9 @@
   margin: 10px;
   border: 2px solid pink;
 }
+.error {
+  border:2px solid red;
+}
+.error:outlin {
+  border:2px solid red;
+}
