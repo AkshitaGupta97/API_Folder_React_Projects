@@ -1,7 +1,9 @@
 
 import './App.css'
-import InputChanges from './checkNameError/InputChanges'
-import InputChangesUseAction from './checkNameError/InputChangeUseactionstate'
+import Loading from './Loading'
+//import InputChanges from './checkNameError/InputChanges'
+//import InputChangesUseAction from './checkNameError/InputChangeUseactionstate'
+import UseReducerHook from './UseReducerHook'
 //import MainApi from './MainApi'
 
 function App() {
@@ -10,8 +12,14 @@ function App() {
     <div>
 
        {/* <MainApi /> */}
-      <InputChanges />
-      <InputChangesUseAction />
+      {
+        /* <InputChanges />
+      <InputChangesUseAction /> */
+      }
+
+      <UseReducerHook />
+
+      <Loading />
     </div>
   )
 }

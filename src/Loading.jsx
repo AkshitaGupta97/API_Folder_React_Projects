@@ -1,0 +1,17 @@
+import { lazy, Suspense, useState } from "react"
+import LoadingUser from "./loadingUser"
+
+const User = lazy(() => import('./loadingUser'))
+
+export default function Loading() {
+    const [load, setLoad] = useState(false)
+    return(
+        <div style={{color:'yellow', padding:"12px", border:"2px solid orange"}}>
+            <h2> Lazy Loading</h2>
+            {
+                load? <Suspense fallback={loading}> < LoadingUser/></Suspense>  : null
+            }
+            <button onClick={() => setLoad(true)}>Load User</button>
+        </div>
+    )
+}
