@@ -1,9 +1,11 @@
 
 import './App.css'
-import Loading from './Loading'
+import ColorMain from './ColorGenerator/Color_1'
+//import Loading from './Loading'
+//import UseApi from './UseApi'
 //import InputChanges from './checkNameError/InputChanges'
 //import InputChangesUseAction from './checkNameError/InputChangeUseactionstate'
-import UseReducerHook from './UseReducerHook'
+//import UseReducerHook from './UseReducerHook'
 //import MainApi from './MainApi'
 
 function App() {
@@ -17,9 +19,14 @@ function App() {
       <InputChangesUseAction /> */
       }
 
-      <UseReducerHook />
+     {/*  <UseReducerHook /> */}
 
-      <Loading />
+      {/**
+       * <Loading />
+      <UseApi />
+       */}
+
+       <ColorMain />
     </div>
   )
 }

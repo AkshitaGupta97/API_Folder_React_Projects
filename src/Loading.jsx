@@ -8,10 +8,16 @@ export default function Loading() {
     return(
         <div style={{color:'yellow', padding:"12px", border:"2px solid orange"}}>
             <h2> Lazy Loading</h2>
-            {
-                load? <Suspense fallback={loading}> < LoadingUser/></Suspense>  : null
-            }
+            <br />
             <button onClick={() => setLoad(true)}>Load User</button>
+            {
+                load? <Suspense fallback={<h2>loading...</h2>}> < LoadingUser/></Suspense>  : null
+            }
+
+            {
+                /* load? < LoadingUser/>: null */
+            }
+            
         </div>
     )
 }
